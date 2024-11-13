@@ -1,0 +1,53 @@
+.product-detail {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.detail-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Space between image and details */
+}
+
+.product-image {
+  width: 300px; /* Set width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+  transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.product-image:hover {
+  transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+.product-info {
+  flex: 1; /* Take up remaining space */
+}
+
+.product-info h2 {
+  color: #343a40; /* Darker text for the product name */
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin: 5px 0;
+  color: #555; /* Slightly darker gray for text */
+}
+
+.add-to-cart {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}

@@ -1,0 +1,72 @@
+.product-list {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.product-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker text for better readability */
+}
+
+.product-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 products per row */
+  gap: 15px; /* Space between items */
+}
+
+.product-list li {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation on hover */
+}
+
+.product-list li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.product-list img {
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  object-fit: contain; /* Maintain aspect ratio */
+  border-radius: 8px;
+  transition: transform 0.3s; /* Animation for image */
+}
+
+.product-list li:hover img {
+  transform: scale(1.1); /* Enlarge image on hover */
+}
+
+.product-list h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #007bff; /* Link color for product name */
+}
+
+.product-list p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.show-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.show-more:hover {
+  background-color: #0056b3;
+}
